@@ -1,46 +1,117 @@
 package domain;
 
-public class Cat extends Predator {
 
-    private String kind;
+ /**
+ * The class Penguin extends predator
+ */ 
+public class Penguin extends Predator {
 
-    public Cat(String name, int weight, String kind) {
+    private String specie;
+
+
+/** 
+ *
+ * Penguin
+ *
+ * @param name  the name
+ * @param weight  the weight
+ * @param height  the height
+ * @param specie  the specie
+ * @return public
+ */
+    public Penguin(String name, int weight, int height, String specie) { 
+
         this.name=name;
         this.weight=weight;
-        this.kind=kind;
+        this.height=height;
+        this.specie=specie;
     }
 
-    public Cat() {
-        this("Fluffy",4,"just a cat");
+
+/** 
+ *
+ * Penguin
+ *
+ * @return public
+ */
+    public Penguin() { 
+
+        this("GigaChad", 50, 130,"Emperor penguin");
     }
 
-    public Cat(String name) {
-        this(name,4,"just a cat");
-    }
-        
 
-    public void play() {
-        System.out.println("Cat is playing...");
+/** 
+ *
+ * Penguin
+ *
+ * @param name  the name
+ * @return public
+ */
+    public Penguin(String name) { 
+
+        this(name,50,130,"Emperor penguin");
+    }
+    
+   
+
+
+/** 
+ *
+ * Swim
+ *
+ */
+    public void swim() { 
+
+        System.out.println("Penguin really like swimming");
     }
 
     @Override
-    public void hunt() {
-        System.out.println("Cat hunting for a mouse...");
+
+/** 
+ *
+ * Hunt
+ *
+ */
+    public void hunt() { 
+
+        System.out.println("Penguin really well hunting for fish");
     }
 
     @Override
-    public String toString() {
-        return super.toString()+"\nKind:\t"+this.kind+"\n\nThis is Cat!";
+
+/** 
+ *
+ * To string
+ *
+ * @return String
+ */
+    public String toString() { 
+
+        return super.toString()+"\nSpecie:\t"+this.specie+"\n\nThis is Penguin";
     }
 
     @Override
-    public void speak() {
-        System.out.println("Meow! Meow!");
+
+/** 
+ *
+ * Speak
+ *
+ */
+    public void speak() { 
+
+        System.out.println("Squack squack!");
     }
 
     @Override
-    public void eat() {
-        System.out.println("Cat eats meat...");
+
+/** 
+ *
+ * Eat
+ *
+ */
+    public void eat() { 
+
+        System.out.println("Penguin eats krill, squids and fishes");
     }
     
     
